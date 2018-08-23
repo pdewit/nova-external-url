@@ -21,6 +21,8 @@ composer require pdewit/nova-external-url
 You can add the field with a resolver as follows:
 
 ```
+use Pdewit\ExternalUrl\ExternalUrl;
+
 ExternalUrl::make('Google Link', function () {
     return 'https://www.google.com/search?q=' . $this->name;
 }),
