@@ -19,4 +19,8 @@ class ExternalUrl extends Field
 
         $this->exceptOnForms();
     }
+
+    public function linkText($linkText) {
+        return $this->withMeta(["linkText" => $linkText]);
+    }
 }
