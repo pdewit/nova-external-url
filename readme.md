@@ -28,4 +28,14 @@ ExternalUrl::make('Google Link', function () {
 }),
 ```
 
+## Customising the displayed text
 
+You can customise the displayed text using the `linkText` function like so:
+
+```
+use Pdewit\ExternalUrl\ExternalUrl;
+
+ExternalUrl::make('Google Link', function () {
+    return 'https://www.google.com/search?q=' . $this->name;
+})->linkText($this->name),
+```
