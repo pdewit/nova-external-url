@@ -20,7 +20,7 @@ composer require pdewit/nova-external-url
 
 You can add the field with a resolver as follows:
 
-```
+```php
 use Pdewit\ExternalUrl\ExternalUrl;
 
 ExternalUrl::make('Google Link', function () {
@@ -32,7 +32,7 @@ ExternalUrl::make('Google Link', function () {
 
 You can customise the displayed text using the `linkText` function like so:
 
-```
+```php
 use Pdewit\ExternalUrl\ExternalUrl;
 
 ExternalUrl::make('Google Link', function () {
