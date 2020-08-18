@@ -39,3 +39,13 @@ ExternalUrl::make('Google Link', function () {
     return 'https://www.google.com/search?q=' . $this->name;
 })->linkText($this->name),
 ```
+
+The label below the link normally shows the URL, but it can be overridden:
+
+```php
+use Pdewit\ExternalUrl\ExternalUrl;
+
+ExternalUrl::make('Google Link', function () {
+    return 'https://www.google.com/search?q=' . $this->name;
+})->labelText('View search results on Google'),
+```

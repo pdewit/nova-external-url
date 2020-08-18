@@ -23,4 +23,8 @@ class ExternalUrl extends Field
     public function linkText($linkText) {
         return $this->withMeta(["linkText" => $linkText]);
     }
+
+    public function labelText($labelText) {
+        return $this->withMeta(["labelText" => $labelText]);
+    }
 }
